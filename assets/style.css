@@ -1,0 +1,28 @@
+.header-rigth-singin .heder-rigth-singin-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-rigth-singin .heder-rigth-singin-info .heder-rigth-singin-info-wrap-element{
+    position: relative;
+
+}
+.header-rigth-singin .heder-rigth-singin-info .heder-rigth-singin-info-wrap-element{
+    width: 50px;
+    height: 50px;
+    padding-top: 5px;
+}
+.header-rigth-singin .heder-rigth-singin-info .heder-rigth-singin-info-wrap-element i{
+    font-size: 36px;
+}
+.header-rigth-singin .heder-rigth-singin-info .heder-rigth-singin-info-wrap-element .badge{
+    font-size: 10px;
+    padding: .15em .35em;
+    position: absolute;
+    right: 10px;
+    top: 0;
+}
+.main-menu, .main-menu-user{
+    height: 35px;
+}

@@ -59,8 +59,20 @@ function wp_math123_ua_start($atts){
  * То, что выводем если пользователь не авторизован
  */
 function wp_math123_ua_no_login_html($url){
-    return '<div class="header-rigth-singin">
-                    <a href="'.$url.'/reg">регистрация</a> / <a href="'.$url.'/login" rel="noopener noreferrer">войти</a>
+    return '<div class="header-rigth-login">
+                    <h6 class="text-purple">Авторизация</h6>
+                    <form method="post" action="'.$url.'/login">
+                        <div class="user-icon">
+                            <input type="phone" name="loginLogi">
+                        </div>
+                        <div class="lock-icon">
+                            <input type="password" name="loginPass">
+                        </div>
+                        <div>
+                            <input type="submit" class="btn-sub" name="loginSub" value="Войти">
+                        </div>
+                    </form>
+                    <h6><a href="'.$url.'/reg">Регистрация</a></h6>
                 </div>';
 }
 
@@ -69,7 +81,7 @@ function wp_math123_ua_no_login_html($url){
  */
 function wp_math123_ua_login_html($url){
     include 'include/templates/user_info_for_header.php';
-    //return true;
+    return true;
 }
 
 /**

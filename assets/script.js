@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function(){
             //spiner_html()
             let
                 spiner = div_info.querySelector('.spiner_header'),
-                enter  = div_info.querySelector('.enter-login'),
+                enter  = div_info.querySelector('.header-rigth-login'),
                 fio = div_info.querySelector('.header-rigth-singin-fio'),
                 info = div_info.querySelector('.heder-rigth-singin-info');
 
@@ -53,10 +53,12 @@ document.addEventListener('DOMContentLoaded', function(){
                         session_id: session_id
                     },
                     success: function (html) {
-                        console.log(html);
+                        //console.log(session_id);
+                        //console.log(id_user);
+                        //console.log(html);
                         if(html['access']){
                             let spiner = div_info.querySelector('.spiner_header'),
-                                enter  = div_info.querySelector('.enter-login'),
+                                enter  = div_info.querySelector('.header-rigth-login'),
                                 fio = div_info.querySelector('.header-rigth-singin-fio'),
                                 info = div_info.querySelector('.heder-rigth-singin-info');
 

@@ -34,7 +34,19 @@
         </div>
     </div>
     <!-- Воход на сайт -->
-    <div class="enter-login" style="display: none">
-        <a href="<?=$url?>/reg">регистрация</a> / <a href="<?=$url?>/login" rel="noopener noreferrer">войти</a></div>
+    <div class="header-rigth-login" style="display: none">
+        <h6 class="text-purple">Авторизация</h6>
+        <form method="post" action="<?=$url?>/login">
+            <div class="user-icon">
+                <input type="phone" name="loginLogi" required>
+            </div>
+            <div class="lock-icon">
+                <input type="password" name="loginPass" required>
+            </div>
+            <div>
+                <input type="submit" class="btn-sub" name="loginSub" value="Войти">
+            </div>
+        </form>
+        <h6><a href="<?=$url?>/reg">Регистрация</a></h6>
     </div>
 </div>
